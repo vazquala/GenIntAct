@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
+public interface Transformer <IN, OUT> {
 
-public interface Transformer {
+    OUT transform(IN input);
+
 }

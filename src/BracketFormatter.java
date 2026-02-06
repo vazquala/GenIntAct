@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class BracketFormatter <T> implements Formatter <T> {
 
-public class BracketFormatter {
+    @Override
+    public String format(T value) {
+        return "[" + value + "]";
+    }
 }

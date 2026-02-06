@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class StringLengthTransformer implements Transformer<String, Integer> {
 
-public class StringLengthTransformer {
+    @Override
+    public Integer transform(String input) {
+        if (input == null) {
+            return 0;
+        } else {
+            return input.length();
+        }
+    }
 }

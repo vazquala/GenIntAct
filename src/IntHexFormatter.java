@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class IntHexFormatter implements Formatter<Integer> {
 
-public class IntHexFormatter {
+    @Override
+    public String format(Integer value) {
+        return Integer.toHexString(value).toUpperCase();
+    }
 }

@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class AlwaysTrueRule <T> implements Rule <T> {
 
-public class AlwaysTrueRule {
+    @Override
+    public boolean test(T value) {
+        return true;
+    }
 }

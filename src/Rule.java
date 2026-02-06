@@ -1,4 +1,8 @@
-package PACKAGE_NAME;
+public interface Rule <T>{
 
-public interface Rule {
+    boolean test(T value);
+
+    default boolean testNot(T value) {
+        return !test(value);
+    }
 }

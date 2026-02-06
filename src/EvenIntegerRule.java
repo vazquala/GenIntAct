@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class EvenIntegerRule implements Rule <Integer> {
 
-public class EvenIntegerRule {
+    @Override
+    public boolean test(Integer value) {
+        return value != null && value % 2 == 0;
+    }
 }

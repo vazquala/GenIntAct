@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public interface Formatter <T> {
+    String format(T value);
 
-public interface Formatter {
+    default void print(T value) {
+        System.out.println(format(value));
+    }
 }

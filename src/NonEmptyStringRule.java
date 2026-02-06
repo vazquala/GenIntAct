@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class NonEmptyStringRule implements Rule <String> {
 
-public class NonEmptyStringRule {
+    @Override
+    public boolean test(String value) {
+        return value != null && !value.isBlank();
+    }
 }
